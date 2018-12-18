@@ -2,15 +2,15 @@
 ---
 actions:
 - utter_goodbye
-- utter_greet
 - utter_ask_location
 - action_weather
+- utter_greet
 entities:
 - location
 intents:
+- greet
 - goodbye
 - inform
-- greet
 slots:
   location:
     type: text

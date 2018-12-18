@@ -22,3 +22,14 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story -3260268258962465565
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location": "china"}
+    - slot{"location": "china"}
+    - action_weather
+* goodbye
+    - utter_goodbye
+
