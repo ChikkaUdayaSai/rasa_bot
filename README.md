@@ -1,4 +1,4 @@
-### Weatherbot Tutorial
+# Weatherbot Tutorial
 This is the study materials from https://github.com/JustinaPetr/Weatherbot_Tutorial. I updated some dependencies' version in requirments.txt file.
 
 ## How to use this repo
