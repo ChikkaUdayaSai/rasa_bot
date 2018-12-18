@@ -5,5 +5,5 @@
 - Hello
 
 ## intent:inform
-- What's the weather like today?
+- What's the weather?
 - In [Italy](location:italy)
