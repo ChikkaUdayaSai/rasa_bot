@@ -1,16 +1,16 @@
 %YAML 1.1
 ---
 actions:
-- utter_goodbye
-- utter_ask_location
-- action_weather
 - utter_greet
+- action_weather
+- utter_ask_location
+- utter_goodbye
 entities:
 - location
 intents:
-- greet
 - goodbye
 - inform
+- greet
 slots:
   location:
     type: text

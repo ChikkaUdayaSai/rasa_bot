@@ -33,3 +33,15 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story 5026774370259720983
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location": "london"}
+    - slot{"location": "london"}
+    - action_weather
+    - slot{"location": "london"}
+* goodbye
+    - utter_goodbye
+

@@ -1,9 +1,9 @@
 ## intent:goodbye
-- Goodbye
+- Thanks. Bye!
 
 ## intent:greet
 - Hello
 
 ## intent:inform
 - What's the weather today?
-- In [China](location:china)
+- In [London](location:london)
