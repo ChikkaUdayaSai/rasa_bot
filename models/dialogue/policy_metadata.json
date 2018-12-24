@@ -2,20 +2,23 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "location",
+        "size",
         "toppings",
-        "size"
+        "location"
       ]
-    },
-    "action_order_pizza": {
-      "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
     },
     "action_weather": {
       "slots": [
         "location"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "action_order_pizza": {
+      "slots": [
+        "toppings",
+        "size"
       ]
     }
   },
@@ -23,12 +26,14 @@
   "python": "3.6.3",
   "max_histories": [
     5,
-    3
+    3,
+    null
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20181224-144334"
+  "trained_at": "20181224-160557"
 }

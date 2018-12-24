@@ -1,13 +1,13 @@
 %YAML 1.1
 ---
 actions:
-- action_weather
 - utter_goodbye
+- action_weather
 - action_order_pizza
-- utter_get_pizza_toppings
-- utter_greet
 - utter_get_pizza_size
+- utter_greet
 - utter_ask_location
+- utter_get_pizza_toppings
 config:
   store_entities_as_slots: true
 entities:
@@ -16,13 +16,13 @@ entities:
 - toppings
 forms: []
 intents:
-- greet:
+- goodbye:
     use_entities: true
-- inform:
+- greet:
     use_entities: true
 - order_pizza:
     use_entities: true
-- goodbye:
+- inform:
     use_entities: true
 slots:
   location:
@@ -40,6 +40,8 @@ slots:
 templates:
   utter_ask_location:
   - text: In what location?
+  utter_default:
+  - text: Sorry, I didn’t understand that.
   utter_get_pizza_size:
   - text: What pizza size?
   utter_get_pizza_toppings:

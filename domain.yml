@@ -37,3 +37,5 @@ templates:
   utter_greet:
   - text: Hello! How can I help?
   - text: Hi, I am here to help.
+  utter_default:
+    - text: Sorry, I didn’t understand that.

@@ -14,12 +14,12 @@
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
-    "prev_action_weather",
     "prev_utter_goodbye",
+    "prev_action_weather",
     "prev_action_order_pizza",
-    "prev_utter_get_pizza_toppings",
-    "prev_utter_greet",
     "prev_utter_get_pizza_size",
-    "prev_utter_ask_location"
+    "prev_utter_greet",
+    "prev_utter_ask_location",
+    "prev_utter_get_pizza_toppings"
   ]
 }
