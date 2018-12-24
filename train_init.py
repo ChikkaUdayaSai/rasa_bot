@@ -9,7 +9,7 @@ if __name__ == '__main__':
     train_data_file = './data/stories.md'
     model_path = './models/dialogue'
 
-    agent = Agent('weather_domain.yml',
+    agent = Agent('domain.yml',
                   policies=[MemoizationPolicy(), KerasPolicy(max_history=3, epochs=200, batch_size=50)])
 
     data = agent.load_data(train_data_file)

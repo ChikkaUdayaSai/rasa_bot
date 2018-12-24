@@ -14,6 +14,7 @@ def train_nlu(data, configs, model_dir):
 def run_nlu():
     interpreter = Interpreter.load('./models/nlu/default/weathernlu')
     print(interpreter.parse(u"I am planning my holiday to Lithuania. I wonder what is the weather out there."))
+    print(interpreter.parse("I want to buy some pizzas"))
 
 
 if __name__ == "__main__":

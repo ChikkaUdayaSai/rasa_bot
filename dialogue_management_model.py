@@ -15,7 +15,7 @@ from rasa_core.run import serve_application
 logger = logging.getLogger(__name__)
 
 
-def train_dialogue(domain_file='weather_domain.yml',
+def train_dialogue(domain_file='domain.yml',
                    model_path='models/dialogue',
                    train_data_file='data/stories.md'):
     agent = Agent(domain_file, policies=[MemoizationPolicy(),

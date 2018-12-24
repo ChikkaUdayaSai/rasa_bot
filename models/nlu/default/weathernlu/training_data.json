@@ -220,6 +220,82 @@
           }
         ],
         "text": "The weather condition in Italy"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "large",
+            "entity": "size"
+          }
+        ],
+        "text": "I want to order a large pizza."
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "olives",
+            "entity": "toppings"
+          }
+        ],
+        "text": "I want to order pizza with olives"
+      },
+      {
+        "intent": "order_pizza",
+        "text": "Can you help me order pizza?"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cheese",
+            "entity": "toppings"
+          }
+        ],
+        "text": "cheese"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "beef",
+            "entity": "toppings"
+          }
+        ],
+        "text": "beef"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "medium",
+            "entity": "size"
+          }
+        ],
+        "text": "medium"
+      },
+      {
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "small",
+            "entity": "size"
+          }
+        ],
+        "text": "small"
       }
     ],
     "regex_features": [],

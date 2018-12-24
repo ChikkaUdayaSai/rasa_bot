@@ -30,3 +30,15 @@ class ActionWeather(Action):
 
         dispatcher.utter_message(response)
         return [SlotSet('location', loc)]
+
+
+class ActionOrderPizza(Action):
+    def name(self):
+        return 'action_order_pizza'
+
+    def run(self, dispatcher, tracker, domain):
+        size = tracker.get_slot('size')
+        toppings = tracker.get_slot('toppings')
+        response = 'Ordering {} Pizza with {} is completed! It should be with you soon :)'.format(size, toppings)
+        dispatcher.utter_message(response)
+        return [SlotSet('size', size), SlotSet('toppings', toppings)]

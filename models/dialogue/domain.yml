@@ -1,32 +1,52 @@
 %YAML 1.1
 ---
 actions:
-- utter_greet
-- utter_goodbye
-- utter_ask_location
 - action_weather
+- utter_goodbye
+- action_order_pizza
+- utter_get_pizza_toppings
+- utter_greet
+- utter_get_pizza_size
+- utter_ask_location
 config:
   store_entities_as_slots: true
 entities:
+- size
 - location
+- toppings
 forms: []
 intents:
 - greet:
     use_entities: true
-- goodbye:
-    use_entities: true
 - inform:
+    use_entities: true
+- order_pizza:
+    use_entities: true
+- goodbye:
     use_entities: true
 slots:
   location:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  size:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  toppings:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_location:
   - text: In what location?
+  utter_get_pizza_size:
+  - text: What pizza size?
+  utter_get_pizza_toppings:
+  - text: What toppings would you like on your pizza?
   utter_goodbye:
   - text: Talk to you later.
   - text: Bye bye :(
   utter_greet:
   - text: Hello! How can I help?
+  - text: Hi, I am here to help.

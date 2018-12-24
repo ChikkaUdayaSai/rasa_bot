@@ -1,9 +1,10 @@
 ## intent:goodbye
-- Thanks. Bye!
+- Thank you
 
 ## intent:greet
-- Hello
+- hi
 
-## intent:inform
-- What's the weather today?
-- In [London](location:london)
+## intent:order_pizza
+- I want pizza
+- [large](size)
+- [Olives](toppings:olives)

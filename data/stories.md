@@ -1,3 +1,13 @@
+## order pizza story
+* greet
+    - utter_greet
+* order_pizza
+    - utter_get_pizza_size
+* order_pizza
+    - utter_get_pizza_toppings
+* order_pizza
+    - action_order_pizza
+
 ## Generated Story 5102548860608436662
 * greet
     - utter_greet
@@ -42,6 +52,33 @@
     - slot{"location": "london"}
     - action_weather
     - slot{"location": "london"}
+* goodbye
+    - utter_goodbye
+
+## Generated Story -5052886794164103452
+* greet
+    - utter_greet
+* inform{"location": "vilnius"}
+    - slot{"location": "vilnius"}
+    - action_weather
+    - slot{"location": "vilnius"}
+* goodbye
+    - utter_goodbye
+
+
+## Generated Story 944502499648864895
+* greet
+    - utter_greet
+* order_pizza
+    - utter_get_pizza_size
+* order_pizza{"size": "large"}
+    - slot{"size": "large"}
+    - utter_get_pizza_toppings
+* order_pizza{"toppings": "olives"}
+    - slot{"toppings": "olives"}
+    - action_order_pizza
+    - slot{"size": "large"}
+    - slot{"toppings": "olives"}
 * goodbye
     - utter_goodbye
 
