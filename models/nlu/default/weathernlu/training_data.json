@@ -296,6 +296,18 @@
           }
         ],
         "text": "small"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a lot!"
+      },
+      {
+        "intent": "thank",
+        "text": "Thank you very much!"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks"
       }
     ],
     "regex_features": [],
