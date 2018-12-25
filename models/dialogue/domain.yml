@@ -2,6 +2,7 @@
 ---
 actions:
 - utter_goodbye
+- utter_thank
 - action_weather
 - action_order_pizza
 - utter_get_pizza_size
@@ -16,6 +17,8 @@ entities:
 - toppings
 forms: []
 intents:
+- thank:
+    use_entities: true
 - goodbye:
     use_entities: true
 - greet:
@@ -52,3 +55,7 @@ templates:
   utter_greet:
   - text: Hello! How can I help?
   - text: Hi, I am here to help.
+  utter_thank:
+  - text: You're welcome!
+  - text: Not at all.
+  - text: Don't mention it.

@@ -1,22 +1,24 @@
 %YAML 1.1
 ---
 actions:
-- utter_goodbye
 - action_weather
-- action_order_pizza
-- utter_get_pizza_size
-- utter_greet
-- utter_ask_location
 - utter_get_pizza_toppings
+- utter_get_pizza_size
+- utter_goodbye
+- action_order_pizza
+- utter_thank
+- utter_ask_location
+- utter_greet
 entities:
-- size
-- location
 - toppings
+- location
+- size
 intents:
-- goodbye
-- greet
-- order_pizza
 - inform
+- thank
+- greet
+- goodbye
+- order_pizza
 slots:
   location:
     type: text
@@ -27,6 +29,8 @@ slots:
 templates:
   utter_ask_location:
   - text: In what location?
+  utter_default:
+  - text: Sorry, I didn’t understand that.
   utter_get_pizza_size:
   - text: What pizza size?
   utter_get_pizza_toppings:
@@ -37,5 +41,7 @@ templates:
   utter_greet:
   - text: Hello! How can I help?
   - text: Hi, I am here to help.
-  utter_default:
-    - text: Sorry, I didn’t understand that.
+  utter_thank:
+  - text: You're welcome!
+  - text: Not at all.
+  - text: Don't mention it.

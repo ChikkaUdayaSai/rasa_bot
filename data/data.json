@@ -313,6 +313,21 @@
             "entity": "size"
           }
         ]
+      },
+      {
+        "text": "thanks a lot!",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thank you very much!",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thanks",
+        "intent": "thank",
+        "entities": []
       }
     ]
   }

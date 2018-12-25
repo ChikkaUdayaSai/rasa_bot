@@ -7,6 +7,18 @@
     - utter_get_pizza_toppings
 * order_pizza
     - action_order_pizza
+    
+## weather story
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location": "italy"}
+    - slot{"location": "italy"}
+    - action_weather
+    - slot{"location": "italy"}
+* thank
+    - utter_thank
 
 ## Generated Story 5102548860608436662
 * greet
@@ -81,4 +93,18 @@
     - slot{"toppings": "olives"}
 * goodbye
     - utter_goodbye
+
+## Generated Story -952726643222063042
+* thank
+    - utter_thank
+
+## Generated Story 5411064511977660461
+* greet
+    - utter_greet
+* inform{"location": "italy"}
+    - slot{"location": "italy"}
+    - action_weather
+    - slot{"location": "italy"}
+* thank
+    - utter_thank
 
