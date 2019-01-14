@@ -1,31 +1,31 @@
 %YAML 1.1
 ---
 actions:
-- utter_goodbye
-- utter_thank
 - action_weather
-- action_order_pizza
-- utter_get_pizza_size
-- utter_greet
-- utter_ask_location
 - utter_get_pizza_toppings
+- utter_get_pizza_size
+- utter_goodbye
+- action_order_pizza
+- utter_thank
+- utter_ask_location
+- utter_greet
 config:
   store_entities_as_slots: true
 entities:
-- size
-- location
 - toppings
+- location
+- size
 forms: []
 intents:
-- thank:
+- inform:
     use_entities: true
-- goodbye:
+- thank:
     use_entities: true
 - greet:
     use_entities: true
-- order_pizza:
+- goodbye:
     use_entities: true
-- inform:
+- order_pizza:
     use_entities: true
 slots:
   location:

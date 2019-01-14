@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 def train_dialogue(domain_file='domain.yml',
                    model_path='models/dialogue',
-                   train_data_file='data/stories.md'):
+                   train_data_file='data/core/stories.md'):
     fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
                               core_threshold=0.3,
                               nlu_threshold=0.3)

@@ -5,9 +5,9 @@
     "intent_inform",
     "intent_order_pizza",
     "intent_thank",
-    "entity_size",
-    "entity_location",
     "entity_toppings",
+    "entity_location",
+    "entity_size",
     "slot_location_0",
     "slot_size_0",
     "slot_toppings_0",
@@ -15,13 +15,13 @@
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
-    "prev_utter_goodbye",
-    "prev_utter_thank",
     "prev_action_weather",
-    "prev_action_order_pizza",
+    "prev_utter_get_pizza_toppings",
     "prev_utter_get_pizza_size",
-    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_action_order_pizza",
+    "prev_utter_thank",
     "prev_utter_ask_location",
-    "prev_utter_get_pizza_toppings"
+    "prev_utter_greet"
   ]
 }
